@@ -5,7 +5,8 @@
   "description": "A profile package with many vendor imports which provide integration with EVM blockchain networks.",
   "unity": "2020.3",
   "dependencies": {
-    "com.alephvault.unity.support": "0.0.2"
+    "com.alephvault.unity.support": "0.0.2",
+    "com.unity.nuget.newtonsoft-json": "2.0.0"
   },
   "author": {
     "name": "Aleph Vault",

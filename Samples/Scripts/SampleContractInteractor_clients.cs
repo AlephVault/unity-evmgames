@@ -1,9 +1,5 @@
-using System;
-using AlephVault.Unity.EVMGames.WalletConnectSharp.NEthereum;
 using AlephVault.Unity.EVMGames.Nethereum.Web3;
 using AlephVault.Unity.EVMGames.Nethereum.Web3.Accounts;
-using AlephVault.Unity.EVMGames.WalletConnectSharp.Unity;
-using UnityEngine;
 
 
 namespace AlephVault.Unity.EVMGames
@@ -26,6 +22,8 @@ namespace AlephVault.Unity.EVMGames
                 web3DirectClient = new Web3(new Account(privateKey, ChainId), endpoint);
             }
 
+            // TODO review this to implement something new
+            /**
             private void InitWeb3IndirectClient()
             {
                 // Initializes the indirect client from a session.
@@ -41,14 +39,17 @@ namespace AlephVault.Unity.EVMGames
                 // called when a session is terminated.
                 web3IndirectClient = null;
             }
+            */
 
             private void StartWeb3Clients()
             {
                 // This function requires the walletConnect instance
                 // to appropriately exist.
                 InitWeb3DirectClient();
-                WalletConnect.Instance.ConnectedEvent.AddListener(InitWeb3IndirectClient);
-                WalletConnect.Instance.DisconnectedEvent.AddListener(ClearWeb3IndirectClient);
+
+                // TODO replace this
+                // WalletConnect.Instance.ConnectedEvent.AddListener(InitWeb3IndirectClient);
+                // WalletConnect.Instance.DisconnectedEvent.AddListener(ClearWeb3IndirectClient);
             }
         }
     }

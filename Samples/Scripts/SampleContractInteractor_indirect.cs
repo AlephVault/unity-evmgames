@@ -1,6 +1,4 @@
 using System;
-using AlephVault.Unity.EVMGames.Nethereum.Signer;
-using AlephVault.Unity.EVMGames.WalletConnectSharp.Unity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -64,7 +62,9 @@ namespace AlephVault.Unity.EVMGames
                 {
                     try
                     {
-                        await WalletConnect.Instance.Connect();
+                        // TODO implement something new in place of this.
+                        // TODO or perhaps remove indirect client at all.
+                        // await WalletConnect.Instance.Connect();
                     }
                     catch (Exception e)
                     {
@@ -76,7 +76,9 @@ namespace AlephVault.Unity.EVMGames
                 {
                     try
                     {
-                        WalletConnect.Instance.CloseSession();
+                        // TODO implement something new in place of this.
+                        // TODO or perhaps remove indirect client at all.
+                        // WalletConnect.Instance.CloseSession();
                     }
                     catch (Exception e)
                     {
@@ -84,6 +86,9 @@ namespace AlephVault.Unity.EVMGames
                     }
                 });
 
+                // TODO implement something new in place of this.
+                // TODO or perhaps remove indirect client at all.
+                /**
                 WalletConnect.Instance.ConnectionStarted += (sender, args) =>
                 {
                     indirectConnectButton.interactable = false;
@@ -121,6 +126,7 @@ namespace AlephVault.Unity.EVMGames
                     indirectBalanceOfButton.interactable = false;
                     indirectSendTokensButton.interactable = false;
                 });
+                */
             }
         }
     }

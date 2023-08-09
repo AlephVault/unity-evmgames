@@ -1,7 +1,3 @@
-using System;
-using AlephVault.Unity.EVMGames.Nethereum.Signer;
-using AlephVault.Unity.EVMGames.WalletConnectSharp.Core.Models;
-using AlephVault.Unity.EVMGames.WalletConnectSharp.Unity;
 using UnityEngine;
 
 
@@ -9,21 +5,24 @@ namespace AlephVault.Unity.EVMGames
 {
     namespace Samples
     {
-        [RequireComponent(typeof(WalletConnect))]
+        // TODO see whether we replace this requirement with something else.
+        // [RequireComponent(typeof(WalletConnect))]
         public class SampleSignerAndVerifier : MonoBehaviour
         {
-            private WalletConnect walletConnect;
+            // TODO see to replace WalletConnect with something else, entirely.
+            // private WalletConnect walletConnect;
             
             private void Awake()
             {
-                walletConnect = GetComponent<WalletConnect>();
+                // walletConnect = GetComponent<WalletConnect>();
             }
 
             private void Start()
             {
-                walletConnect.ConnectedEventSession.AddListener(OnConnected);
+                // walletConnect.ConnectedEventSession.AddListener(OnConnected);
             }
 
+            /**
             private async void OnConnected(WCSessionData session)
             {
                 try
@@ -59,6 +58,7 @@ namespace AlephVault.Unity.EVMGames
                     throw;
                 }
             }
+            */
         }
     }
 }
