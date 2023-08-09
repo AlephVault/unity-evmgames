@@ -16,9 +16,6 @@ Also, 6 compiled assemblies are needed (e.g. into the project's Plugins/ directo
   - BouncyCastle.Crypto.dll
   - Common.Logging.Core.dll
   - Common.Logging.dll
-  - QRCoder.dll
-  - QRCoder.Unity.dll
-  - System.Drawing.Common.dll
   
 # Usage
 
