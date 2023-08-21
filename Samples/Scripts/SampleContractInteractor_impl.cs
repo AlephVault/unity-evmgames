@@ -1,9 +1,9 @@
 using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using AlephVault.Unity.EVMGames.Nethereum.Contracts.ContractHandlers;
-using AlephVault.Unity.EVMGames.Nethereum.RPC.Eth.DTOs;
-using AlephVault.Unity.EVMGames.Nethereum.Web3;
+using Nethereum.Contracts.ContractHandlers;
+using Nethereum.RPC.Eth.DTOs;
+using Nethereum.Web3;
 using AlephVault.Unity.EVMGames.Samples.EthModels;
 using UnityEngine;
 using UnityEngine.UI;

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using AlephVault.Unity.EVMGames.Nethereum.Contracts;
-using AlephVault.Unity.EVMGames.Nethereum.Hex.HexTypes;
-using AlephVault.Unity.EVMGames.Nethereum.RPC.Eth.DTOs;
+using Nethereum.Contracts;
+using Nethereum.Hex.HexTypes;
+using Nethereum.RPC.Eth.DTOs;
 using AlephVault.Unity.EVMGames.Samples.EthModels;
 using AlephVault.Unity.Support.Utils;
 using UnityEngine;

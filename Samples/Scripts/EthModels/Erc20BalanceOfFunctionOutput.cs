@@ -1,5 +1,5 @@
 using System.Numerics;
-using AlephVault.Unity.EVMGames.Nethereum.ABI.FunctionEncoding.Attributes;
+using Nethereum.ABI.FunctionEncoding.Attributes;
 
 
 namespace AlephVault.Unity.EVMGames

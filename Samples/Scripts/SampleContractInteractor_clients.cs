@@ -1,5 +1,5 @@
-using AlephVault.Unity.EVMGames.Nethereum.Web3;
-using AlephVault.Unity.EVMGames.Nethereum.Web3.Accounts;
+using Nethereum.Web3;
+using Nethereum.Web3.Accounts;
 
 
 namespace AlephVault.Unity.EVMGames

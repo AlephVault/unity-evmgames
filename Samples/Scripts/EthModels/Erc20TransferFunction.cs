@@ -1,6 +1,6 @@
 using System.Numerics;
-using AlephVault.Unity.EVMGames.Nethereum.ABI.FunctionEncoding.Attributes;
-using AlephVault.Unity.EVMGames.Nethereum.Contracts;
+using Nethereum.ABI.FunctionEncoding.Attributes;
+using Nethereum.Contracts;
 
 
 namespace AlephVault.Unity.EVMGames
