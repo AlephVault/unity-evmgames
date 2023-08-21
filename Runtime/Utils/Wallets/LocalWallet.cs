@@ -30,6 +30,17 @@ namespace AlephVault.Unity.EVMGames
                     return wallet.GetAccount(accountIndex, chainId);
                 }
                 
+                /// <summary>
+                ///   Creates a Web3 client, with signing capabilities, using an endpoint
+                ///   (which should use https) and a default client, a given mnemonic and
+                ///   password, an account index and finally a chain id.
+                /// </summary>
+                /// <param name="mnemonic">The mnemonic to use (words separated by spaces)</param>
+                /// <param name="password">The password to use, if any</param>
+                /// <param name="gateway">The gateway URL to use</param>
+                /// <param name="accountIndex">The account index. Must be >= 0 (0 by default)</param>
+                /// <param name="chainId">The chain id</param>
+                /// <returns>A Web3 client</returns>
                 public static async Task<Web3> GetWeb3(
                     string mnemonic, string password, string gateway,int accountIndex = 0,
                     BigInteger? chainId = null
@@ -40,6 +51,17 @@ namespace AlephVault.Unity.EVMGames
                     ), gateway);
                 }
 
+                /// <summary>
+                ///   Creates a Web3 client, with signing capabilities, using some custom
+                ///   client, a given mnemonic and password, an account index and finally
+                ///   a chain id a given account index and finally a chain id.
+                /// </summary>
+                /// <param name="mnemonic">The mnemonic to use (words separated by spaces)</param>
+                /// <param name="password">The password to use, if any</param>
+                /// <param name="client">The custom client to use</param>
+                /// <param name="accountIndex">The account index. Must be >= 0 (0 by default)</param>
+                /// <param name="chainId">The chain id</param>
+                /// <returns>A Web3 client</returns>
                 public static async Task<Web3> GetWeb3(
                     string mnemonic, string password, IClient client, int accountIndex = 0,
                     BigInteger? chainId = null
