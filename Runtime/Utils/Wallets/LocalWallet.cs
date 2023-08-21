@@ -21,7 +21,7 @@ namespace AlephVault.Unity.EVMGames
             /// </summary>
             public static class LocalWallet
             {
-                private static Account MakeAccount(
+                private static Account GetAccount(
                     string mnemonic, string password,
                     int accountIndex = 0, BigInteger? chainId = null
                 )
@@ -42,11 +42,11 @@ namespace AlephVault.Unity.EVMGames
                 /// <param name="chainId">The chain id</param>
                 /// <returns>A Web3 client</returns>
                 public static async Task<Web3> GetWeb3(
-                    string mnemonic, string password, string gateway,int accountIndex = 0,
-                    BigInteger? chainId = null
+                    string mnemonic, string password, string gateway = "http://localhost:8545",
+                    int accountIndex = 0, BigInteger? chainId = null
                 )
                 {
-                    return new Web3(MakeAccount(
+                    return new Web3(GetAccount(
                         mnemonic, password, accountIndex, chainId
                     ), gateway);
                 }
@@ -67,7 +67,7 @@ namespace AlephVault.Unity.EVMGames
                     BigInteger? chainId = null
                 )
                 {
-                    return new Web3(MakeAccount(
+                    return new Web3(GetAccount(
                         mnemonic, password, accountIndex, chainId
                     ), client);
                 }
