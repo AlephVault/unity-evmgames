@@ -1,12 +1,13 @@
 using AlephVault.Unity.EVMGames.Utils.Wallets;
 using NBitcoin;
-using Nethereum.HdWallet;
 using Nethereum.Web3;
 using UnityEngine;
 
 
 namespace AlephVault.Unity.EVMGames
 {
+    using Vendor.Nethereum.HdWallet;
+
     namespace Samples
     {
         public class SampleLocalWallet : MonoBehaviour
