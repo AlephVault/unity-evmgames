@@ -2,7 +2,7 @@
 using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Signer;
 
-namespace Nethereum.HdWallet
+namespace AlephVault.Unity.EVMGames.Vendor.Nethereum.HdWallet
 {
     public class PublicWallet
     {

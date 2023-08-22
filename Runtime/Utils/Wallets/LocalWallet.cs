@@ -1,6 +1,5 @@
 using System.Numerics;
 using System.Threading.Tasks;
-using Nethereum.HdWallet;
 using Nethereum.JsonRpc.Client;
 using Nethereum.Web3;
 using Nethereum.Web3.Accounts;
@@ -8,6 +7,8 @@ using Nethereum.Web3.Accounts;
 
 namespace AlephVault.Unity.EVMGames
 {
+    using Vendor.Nethereum.HdWallet;
+
     namespace Utils
     {
         namespace Wallets

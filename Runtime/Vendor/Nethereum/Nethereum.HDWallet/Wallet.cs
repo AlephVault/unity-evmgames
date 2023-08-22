@@ -3,12 +3,11 @@ using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Signer;
 using Nethereum.Util;
 using Nethereum.Web3.Accounts;
-using System;
 using System.Collections.Generic;
 using System.Numerics;
 using KeyPath = NBitcoin.KeyPath;
 
-namespace Nethereum.HdWallet
+namespace AlephVault.Unity.EVMGames.Vendor.Nethereum.HdWallet
 {
     public class Wallet
     {
