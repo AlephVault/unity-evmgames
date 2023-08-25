@@ -1,6 +1,6 @@
 {
   "name": "com.alephvault.unity.evmgames",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Aleph Vault - Unity - EVMGames",
   "description": "A profile package with many vendor imports which provide integration with EVM blockchain networks.",
   "unity": "2020.3",
