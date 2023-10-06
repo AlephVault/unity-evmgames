@@ -8,7 +8,7 @@ To install this package you need to open the package manager in your project and
      - "name": "AlephVault"
      - "url": "https://unity.packages.alephvault.com"
      - "scopes": ["com.alephvault"]
-  2. Look for this package: `com.alephvault.unity.ipfs`.
+  2. Look for this package: `com.alephvault.unity.evmgames`.
   3. Install it.
 
 Also, 6 compiled assemblies are needed (e.g. into the project's Plugins/ directory) for this package to work:
