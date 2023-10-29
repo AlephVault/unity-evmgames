@@ -15,7 +15,9 @@ Also, 6 compiled assemblies are needed (e.g. into the project's Plugins/ directo
 
   - BouncyCastle.Crypto.dll
   - Common.Logging.Core.dll
+     - Be careful when adding this library in modern Unity version (e.g. post-2023). It is already provided and will cause conflict on Unity Collections.
   - Common.Logging.dll
+     - The same care with Common.Logging.Core.dll must be taken here.
   - The whole NEthereum assemblies set.
      - This includes NBitcoin (for Unity 2020.3, use version 5.0.83 -- in any case, disable references validation).
   - Paper (embedded-wallet-service-sdk.dll).
