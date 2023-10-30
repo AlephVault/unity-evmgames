@@ -2,7 +2,6 @@
 
 namespace AlephVault.Unity.EVMGames.Vendor.Nethereum.HdWallet
 {
-#if !(NETCOREAPP2_1 || NETCOREAPP3_1 || NETSTANDARD2_0 || NETSTANDARD2_1 || NET5_0_OR_GREATER)
     public class SecureRandom : IRandom
     {
         public Org.BouncyCastle.Security.SecureRandom SecureRandomInstance =
@@ -21,6 +20,4 @@ namespace AlephVault.Unity.EVMGames.Vendor.Nethereum.HdWallet
             SecureRandomInstance.NextBytes(output);
         }
     }
-#endif
-
 }
